@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movify_MiniProject">
-        <activity android:name=".FirstActivity"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity android:name=".FirstActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
