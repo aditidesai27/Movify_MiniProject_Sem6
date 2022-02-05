@@ -24,10 +24,21 @@ public class FirstActivity extends AppCompatActivity {
                 openLoginActivity();
             }
         });
+        button = (ImageButton) findViewById(R.id.register);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openRegisterActivity();
+            }
+        });
     }
 
     public void openLoginActivity(){
         Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+    public void openRegisterActivity(){
+        Intent intent = new Intent(this, Registerpage.class);
         startActivity(intent);
     }
 }
