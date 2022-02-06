@@ -9,7 +9,7 @@
     tools:context=".Registerpage">
 
     <ImageButton
-        android:id="@+id/register"
+        android:id="@+id/register2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/ic_regbtn" />
 
     <EditText
-        android:id="@+id/etRegEmail"
+        android:id="@+id/email2"
         android:layout_width="228dp"
         android:layout_height="51dp"
         android:layout_marginTop="236dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password2"
         android:layout_width="227dp"
         android:layout_height="48dp"
         android:layout_marginBottom="296dp"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/conPassword"
         android:layout_width="223dp"
         android:layout_height="48dp"
         android:layout_marginBottom="224dp"

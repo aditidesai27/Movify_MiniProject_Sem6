@@ -8,10 +8,11 @@
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/email"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:layout_marginEnd="60dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/user_email"
         android:inputType="textEmailAddress"
@@ -19,14 +20,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.42" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="260dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginBottom="320dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
@@ -63,10 +63,10 @@
         app:srcCompat="@drawable/user" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/login2_btn"
         android:layout_width="344dp"
         android:layout_height="72dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginBottom="212dp"
         android:background="@android:drawable/divider_horizontal_bright"
         android:contentDescription="@string/login"
         android:scaleX="0.9"
@@ -81,7 +81,7 @@
         android:id="@+id/checkBox"
         android:layout_width="151dp"
         android:layout_height="48dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="408dp"
         android:text="@string/remember_me"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.246"
