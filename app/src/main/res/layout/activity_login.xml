@@ -26,7 +26,8 @@
         android:id="@+id/Password"
         android:layout_width="260dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="328dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -35,8 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck"
-        android:autofillHints="" />
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/imageView"

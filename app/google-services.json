@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "159818282322",
+    "project_id": "movify-303ee",
+    "storage_bucket": "movify-303ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159818282322:android:401adac47a3e9583c3368b",
+        "android_client_info": {
+          "package_name": "com.example.movify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159818282322-e1i02ldu794oc3sndrhj7039rj7h33cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8aTjW0GHOhca-PHZ4ubZCNtc_6okR9XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159818282322-e1i02ldu794oc3sndrhj7039rj7h33cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159818282322:android:b0d5f7ec42785a34c3368b",
+        "android_client_info": {
+          "package_name": "com.example.movify_miniproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159818282322-e1i02ldu794oc3sndrhj7039rj7h33cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8aTjW0GHOhca-PHZ4ubZCNtc_6okR9XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159818282322-e1i02ldu794oc3sndrhj7039rj7h33cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

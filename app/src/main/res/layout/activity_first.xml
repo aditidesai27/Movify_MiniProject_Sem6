@@ -13,7 +13,7 @@
         android:layout_width="346dp"
         android:layout_height="67dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="180dp"
         android:background="@android:drawable/divider_horizontal_bright"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,14 +21,13 @@
         app:srcCompat="@drawable/ic_login_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/register_btn"
         android:layout_width="347dp"
         android:layout_height="75dp"
-        android:layout_marginTop="632dp"
+        android:layout_marginTop="592dp"
         android:background="@android:drawable/divider_horizontal_bright"
         android:contentDescription="@string/Register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_createaccount_btn" />

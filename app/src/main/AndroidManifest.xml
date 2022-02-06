@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movify_MiniProject">
+        <activity android:name=".Choice"></activity>
         <activity
             android:name=".Registerpage"
             android:exported="false" />
