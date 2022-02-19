@@ -13,14 +13,22 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Registerpage extends AppCompatActivity {
     private static final String TAG = "Register";
     private FirebaseAuth mAuth;
+    FirebaseFirestore fStore;
+    String userid;
     EditText email1,username1,password1,conpassword1 ;
 
     @Override
@@ -45,12 +53,15 @@ public class Registerpage extends AppCompatActivity {
          ImageButton register = findViewById(R.id.register2);
 
         mAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = email1.getText().toString().trim();
                 String password= password1.getText().toString().trim();
+                String username = username1.getText().toString().trim();
+
                 if(email.isEmpty())
                 {
                     email1.setError("Email is empty");
@@ -81,6 +92,17 @@ public class Registerpage extends AppCompatActivity {
                         if(task.isSuccessful())
                         {
                             Toast.makeText(Registerpage.this,"You are successfully Registered", Toast.LENGTH_SHORT).show();
+                            userid = mAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fStore.collection("users").document(userid);
+                            Map<String,Object> user=new HashMap<>();
+                            user.put("fname",username1);
+                            user.put("email1",email1);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG,"on success, user profile is created for "+userid);
+                                }
+                            });
                             openChoiceActivity();
                         }
                         else
