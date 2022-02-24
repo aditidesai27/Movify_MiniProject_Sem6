@@ -37,7 +37,7 @@ public class FirstActivity extends AppCompatActivity {
 
         FirebaseUser user = mAuth.getCurrentUser();
         if(user!=null){
-            Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
+            Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
             startActivity(intent);
         }
 
@@ -65,13 +65,13 @@ public class FirstActivity extends AppCompatActivity {
                 openRegisterActivity();
             }
         });
-        createRequest();
-        findViewById(R.id.google_btn).setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                signIn();
-            }
-        });
+//        createRequest();
+//        findViewById(R.id.google_btn).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view){
+//                signIn();
+//            }
+//        });
     }
     private void createRequest() {
         // Configure Google Sign In
@@ -100,7 +100,7 @@ public class FirstActivity extends AppCompatActivity {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
 
-                firebaseAuthWithGoogle(account);
+//                firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Toast.makeText(this, "unsuccess", Toast.LENGTH_SHORT).show();
@@ -108,26 +108,26 @@ public class FirstActivity extends AppCompatActivity {
         }
     }
 
-    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
-                            startActivity(intent);
-
-                        } else {
-
-                            Toast.makeText(FirstActivity.this, "Sorry auth failed.", Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
-                });
-    }
+//    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
+//        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
+//        mAuth.signInWithCredential(credential)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if (task.isSuccessful()) {
+//
+//                            FirebaseUser user = mAuth.getCurrentUser();
+//                            Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
+//                            startActivity(intent);
+//
+//                        } else {
+//
+//                            Toast.makeText(FirstActivity.this, "Sorry auth failed.", Toast.LENGTH_SHORT).show();
+//
+//                        }
+//                    }
+//                });
+//    }
 
     public void openLoginActivity(){
         Intent intent = new Intent(this, Login.class);
