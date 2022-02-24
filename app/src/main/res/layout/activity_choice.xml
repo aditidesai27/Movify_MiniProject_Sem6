@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
@@ -7,36 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".Choice">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="2dp">
 
         <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_1" />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_2" />
+                android:button="@drawable/option_10"
+                android:padding="2dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/option_10"
+                android:padding="2dp" />
 
 
         </TableRow>
         <TableRow android:padding="4dp">
+
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_3" />
+                android:button="@drawable/option_11"
+                android:padding="2dp" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -102,12 +100,6 @@
         </TableRow>
 
     </TableLayout>
-    </androidx.cardview.widget.CardView>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/next"
-        android:layout_gravity="bottom|center"
-        />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.amar.library.ui.StickyScrollView>
