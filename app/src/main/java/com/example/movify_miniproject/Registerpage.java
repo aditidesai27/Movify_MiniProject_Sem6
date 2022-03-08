@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -93,16 +94,23 @@ public class Registerpage extends AppCompatActivity {
                         {
                             Toast.makeText(Registerpage.this,"You are successfully Registered", Toast.LENGTH_SHORT).show();
                             userid = mAuth.getCurrentUser().getUid();
+                            Log.d(TAG,"Testing"+userid);
+
                             DocumentReference documentReference = fStore.collection("users").document(userid);
                             Map<String,Object> user=new HashMap<>();
-                            user.put("fname",username1);
-                            user.put("email1",email1);
+                            user.put("fname",username1.getText().toString());
+                            user.put("email1",email1.getText().toString());
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG,"on success, user profile is created for "+userid);
                                 }
-                            });
+                            }).addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            Log.w(TAG, "Error writing document", e);
+                                        }
+                                    });;
                             openChoiceActivity();
                         }
                         else
