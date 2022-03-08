@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
     private static final String TAG = "Login";
     private FirebaseAuth mAuth;
+    private ImageButton button;
     //private static final String TAG="";
     @Override
     public void onStart() {
@@ -35,6 +36,14 @@ public class Login extends AppCompatActivity {
 
         final EditText email = findViewById(R.id.email);
         final EditText password = findViewById(R.id.Password);
+
+        button = (ImageButton) findViewById(R.id.gotoregistert);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openRegisterActivity();
+            }
+        });
 
         ImageButton login = findViewById(R.id.login2_btn);
         mAuth = FirebaseAuth.getInstance();
@@ -61,6 +70,10 @@ public class Login extends AppCompatActivity {
     }
     private void openChoiceActivity(){
         Intent intent = new Intent(this, Choice.class);
+        startActivity(intent);
+    }
+    private void openRegisterActivity(){
+        Intent intent = new Intent(this, Registerpage.class);
         startActivity(intent);
     }
 }

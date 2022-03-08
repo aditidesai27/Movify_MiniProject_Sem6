@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".Choice">
 
-    <TableLayout
+
+        <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="2dp">
@@ -17,57 +18,15 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/option_10"
-                android:padding="2dp" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/option_10"
-                android:padding="2dp" />
-
-
-        </TableRow>
-        <TableRow android:padding="4dp">
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/option_11"
-                android:padding="2dp" />
+                android:background="@drawable/option_1"
+                android:padding="2dp"
+                />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
-                android:button="@drawable/option_1" />
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_1" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_1" />
-
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_1" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:button="@drawable/option_1" />
+                android:background="@drawable/option_2" />
 
 
         </TableRow>
@@ -76,7 +35,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
-                android:button="@drawable/option_1" />
+                android:background="@drawable/option_3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_4" />
+        </TableRow>
+        <TableRow android:padding="4dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_6" />
+
+        </TableRow>
+        <TableRow android:padding="4dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_2" />
+
+
+        </TableRow>
+        <TableRow android:padding="4dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:background="@drawable/option_2" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -101,5 +102,4 @@
 
     </TableLayout>
 
-
-</com.amar.library.ui.StickyScrollView>
+</ScrollView>
