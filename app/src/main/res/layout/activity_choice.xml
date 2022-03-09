@@ -5,149 +5,184 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03121E"
     tools:context=".Choice">
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="15dp">
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="2dp">
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp">
 
-        <TableRow android:padding="4dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
 
-            <CheckBox
-                android:id="@+id/romance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/option_1"
-                android:padding="2dp"
-                />
+            <TableRow android:padding="4dp">
 
-            <CheckBox
-                android:id="@+id/mystrey"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_2" />
+                <CheckBox
+                    android:id="@+id/romance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_1"
+                    android:padding="2dp" />
 
-
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_3" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_4" />
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_5" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_6" />
-
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_7" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_8" />
+                <CheckBox
+                    android:id="@+id/mystery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_2"
+                    android:padding="2dp" />
 
 
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_9" />
+            </TableRow>
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_10" />
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_11" />
+            <TableRow android:padding="4dp">
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_12" />
+                <CheckBox
+                    android:id="@+id/horror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_3"
+                    android:padding="2dp" />
 
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_13" />
+                <CheckBox
+                    android:id="@+id/comedy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_4"
+                    android:padding="2dp" />
+            </TableRow>
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_14" />
+            <TableRow android:padding="4dp">
 
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_15" />
+                <CheckBox
+                    android:id="@+id/thriller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_5"
+                    android:padding="2dp" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_16" />
+                <CheckBox
+                    android:id="@+id/action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_6"
+                    android:padding="2dp" />
 
-        </TableRow>
-        <TableRow android:padding="4dp">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:background="@drawable/option_17" />
+            </TableRow>
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/option_18"
-                android:padding="2dp" />
+            <TableRow android:padding="4dp">
 
-        </TableRow>
-    </TableLayout>
+                <CheckBox
+                    android:id="@+id/fiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_7"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/drama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_8"
+                    android:padding="2dp" />
+
+
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <CheckBox
+                    android:id="@+id/western"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_9"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/fantasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_10"
+                    android:padding="2dp" />
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <CheckBox
+                    android:id="@+id/historical_fiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_11"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/darkcomedy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_12"
+                    android:padding="2dp" />
+
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <CheckBox
+                    android:id="@+id/adventure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_13"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/spy_fiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_14"
+                    android:padding="2dp" />
+
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <CheckBox
+                    android:id="@+id/biography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_15"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/comedy_horror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_16"
+                    android:padding="2dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="80dp"
+                android:padding="4dp">
+
+                <CheckBox
+                    android:id="@+id/political"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_17"
+                    android:padding="2dp" />
+
+                <CheckBox
+                    android:id="@+id/romcom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_18"
+                    android:padding="2dp" />
+
+            </TableRow>
+        </TableLayout>
     </ScrollView>
 
     <ImageView
@@ -156,11 +191,14 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/header" />
+
     <ImageButton
+        android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/save_btn"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="60dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/save_btn"
+        android:contentDescription="@string/save_btn" />
 </RelativeLayout>
