@@ -12,4 +12,8 @@
     <string name="back">Back</string>
     <string name="user_ame">User Name</string>
     <string name="save_btn">Save btn</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
