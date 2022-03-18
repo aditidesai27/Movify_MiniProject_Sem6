@@ -9,13 +9,19 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Choice extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     private CheckBox checkBox,checkBox1,checkBox2,checkBox3,checkBox4,checkBox5,checkBox6,checkBox7,checkBox8,checkBox9,checkBox10,checkBox11,checkBox12,checkBox13,checkBox14,checkBox15,checkBox16,checkBox17,checkBox18;
     private ImageButton button;
-
+    private StringBuilder Intrest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        button = (ImageButton) findViewById(R.id.save_btn);
+
         final CheckBox checkBox = findViewById(R.id.romance);
         final CheckBox checkBox1 = findViewById(R.id.mystery);
         final CheckBox checkBox2 = findViewById(R.id.horror);
@@ -37,7 +43,7 @@ public class Choice extends AppCompatActivity {
 
 
 
-        button = (ImageButton) findViewById(R.id.save_btn);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
